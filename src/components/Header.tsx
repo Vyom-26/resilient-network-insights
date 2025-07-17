@@ -1,12 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
+  const navigate = useNavigate();
+
   return (
     <header className="w-full bg-background border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 cursor-pointer" onClick={() => navigate('/')}>
             <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
               <div className="w-3 h-3 bg-primary-foreground rounded-sm"></div>
             </div>
@@ -28,7 +31,10 @@ export const Header = () => {
             </a>
           </nav>
 
-          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium">
+          <Button 
+            className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium"
+            onClick={() => navigate('/servers')}
+          >
             <CheckCircle className="w-4 h-4 mr-2" />
             Check
           </Button>

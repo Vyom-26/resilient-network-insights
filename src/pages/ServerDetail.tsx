@@ -96,11 +96,11 @@ export const ServerDetail = () => {
         <div className="mb-8">
           <Button 
             variant="ghost" 
-            onClick={() => navigate('/')}
+            onClick={() => navigate('/servers')}
             className="mb-4 text-muted-foreground hover:text-foreground"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Dashboard
+            Back to Servers
           </Button>
           
           <div className="flex items-center justify-between">

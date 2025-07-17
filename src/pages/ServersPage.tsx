@@ -54,7 +54,7 @@ const servers = [
   }
 ];
 
-export const Dashboard = () => {
+export const ServersPage = () => {
   const navigate = useNavigate();
 
   const handleServerClick = (serverId: string) => {
