@@ -16,7 +16,7 @@ export const Header = () => {
             <h1 className="text-2xl font-bold text-foreground">Cisco Analytics</h1>
           </div>
           
-          <nav className="hidden md:flex items-center space-x-8">
+          {/* <nav className="hidden md:flex items-center space-x-8">
             <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
               About
             </a>
@@ -29,11 +29,11 @@ export const Header = () => {
             <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
               Blogs
             </a>
-          </nav>
+          </nav> */}
 
           <Button 
             className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium"
-            onClick={() => navigate('/servers')}
+            onClick={() => navigate('/endpoints')}
           >
             <CheckCircle className="w-4 h-4 mr-2" />
             Check
